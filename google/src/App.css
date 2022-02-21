@@ -1,0 +1,110 @@
+.App {
+  /* text-align: center; */
+  padding: 15px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#detailed-result {
+  /* border-bottom: 1px solid black; */
+  display: grid;
+  height: auto;
+  padding: 15px;
+  margin-top: 25px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  grid-template-areas: "a a c" "b b b" "d e f";
+}
+a {
+  text-decoration: none;
+  color: darkred;
+}
+#detailed-result > div:nth-child(1) {
+  grid-area: a;
+  font-size: 35px;
+}
+#detailed-result > div:nth-child(2) {
+  grid-area: b;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+#detailed-result > div:nth-child(3) {
+  grid-area: c;
+  font-size: 20px;
+  color: blue;
+}
+
+#detailed-result > div:nth-child(4) {
+  grid-area: d;
+  font-size: 20px;
+  color: blue;
+}
+
+#detailed-result > div:nth-child(5) {
+  grid-area: e;
+  font-size: 20px;
+  color: blue;
+}
+
+#detailed-result > div:nth-child(6) {
+  grid-area: f;
+  font-size: 20px;
+  color: blue;
+}
+button{
+  width: 100px;
+  height: 30px;
+  margin-left: 25px;
+}
+input{
+  width: 350px;
+  height: 50px;
+  margin-bottom: 25px;
+}
+.link{
+
+  font-size:25px;
+  font-weight: bolder;
+  margin-right: 25px;
+}
